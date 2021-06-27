@@ -1,0 +1,50 @@
+h1 {
+    background-image: radial-gradient(circle, lightgreen, khaki);
+    text-align: center;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+code {
+    color: black;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: lightgrey;
+    font-size: 1.5em;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+caption, th {
+    font-weight: bold;
+    background-image: linear-gradient(lightgreen, khaki);
+    border: 1px solid black;
+}
+
+caption {
+    font-size: 1.75em;
+}
+
+th {
+    font-size: 1.5em;
+}
+
+td {
+    border: 1px solid black;
+}
+
+td:nth-child(1), td:nth-child(2) {
+    background-color: lightgreen;
+}
+
+td:nth-child(3) {
+    background-color: khaki;
+    font-weight: bold;
+    font-size: 1.125em;
+    font-family: Helvetica, sans-serif;
+}

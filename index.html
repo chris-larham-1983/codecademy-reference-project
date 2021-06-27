@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selector Cheat Sheet</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>CSS Selector Cheat Sheet</h1>
+
+    <p>This project draws heavily on the <strong>Complete CSS Selector Reference</strong> found at <a href="https://w3schools.com" target="_blank">w3schools.com</a>. The examples have been modified and the descriptions slightly re-worded for clarity.</p>
+
+    <table>
+        <caption>Complete CSS Selector Reference</caption>
+        <thead>
+            <tr>
+                <th>CSS Selector</th>
+                <th>CSS Example</th>
+                <th>Example Explanation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>.class</code></td>
+                <td><code>.first</code></td>
+                <td>Selects all elements whose class attribute is equal to 'first'.</td>
+            </tr>
+            <tr>
+                <td><code>.class1.class2</code></td>
+                <td><code>.first.second</code></td>
+                <td>Selects all elements whose class attribute contains both 'first' and 'second'.</td>
+            </tr>
+            <tr>
+                <td><code>.class1 .class2</code></td>
+                <td><code>.first .second</code></td>
+                <td>Selects those elements whose parent element has a class attribute equal to 'first' and whose own class attribute is equal to 'second'.</td>
+            </tr>
+            <tr>
+                <td><code>#id</code></td>
+                <td><code>#lastname</code></td>
+                <td>Selects the element whose id attribute is equal to 'lastname'.</td>
+            </tr>
+            <tr>
+                <td><code>*</code></td>
+                <td><code>*</code></td>
+                <td>Selects all elements.</td>
+            </tr>
+            <tr>
+                <td><code>element</code></td>
+                <td><code>a</code></td>
+                <td>Selects all &lt;a&gt; elements.</td>
+            </tr>
+            <tr>
+                <td><code>element.class</code></td>
+                <td><code>a.codecademy</code></td>
+                <td>Selects all &lt;a&gt; elements whose class attribute is equal to 'codecademy'.</td>
+            </tr>
+            <tr>
+                <td><code>element, element</code></td>
+                <td><code>a, figcaption</code></td>
+                <td>Selects all &lt;a&gt; elements and all &lt;figcaption&gt; elements.</td>
+            </tr>
+            <tr>
+                <td><code>element element</code></td>
+                <td><code>figcaption a</code></td>
+                <td>Selects all &lt;a&gt; elements that are inside &lt;figcaption&gt; elements.</td>
+            </tr>
+            <tr>
+                <td><code>element > element</code></td>
+                <td><code>figcaption > a</code></td>
+                <td>Selects all &lt;a&gt; elements whose parent is a &lt;figcaption&gt; element</td>
+            </tr>
+            <tr>
+                <td><code>element + element</code></td>
+                <td><code>figcaption + a</code></td>
+                <td>Selects the first &lt;a&gt; element that is placed immediately after a &lt;figcaption&gt; element.</td>
+            </tr>
+            <tr>
+                <td><code>element ~ element</code></td>
+                <td><code>figcaption ~ a</code></td>
+                <td>Selects all &lt;a&gt; elements that are preceded by a &lt;figcaption&gt; element with the same parent.</td>
+            </tr>
+            <tr>
+                <td><code>[attribute]</code></td>
+                <td><code>[class]</code></td>
+                <td>Selects all elements with a class attribute.</td>
+            </tr>
+            <tr>
+                <td><code>[attribute=value]</code></td>
+                <td><code>[class=brushes]</code></td>
+                <td>Selects all elements whose class attribute is equal to 'brushes'.</td>
+            </tr>
+            <tr>
+                <td><code>[attribute~=value]</code></td>
+                <td><code>[class~=brushes]</code></td>
+                <td>Selects all elements whose class attribute contains the word 'brushes'.</td>
+            </tr>
+            <tr>
+                <td><code>[attribute|=value]</code></td>
+                <td><code>[class|=brushes]</code></td>
+                <td>Selects all elements whose class attribute begins with 'brushes'.  The value must be a whole word, either alone ('brushes') or followed by a hyphen ('brushes-and-stuff').</td>
+            </tr>
+            <tr>
+                <td><code>[attribute^=value]</code></td>
+                <td><code>figcaption[class^="description"]</code></td>
+                <td>Selects all &lt;figcaption&gt; elements whose class attribute starts with 'description'.</td>
+            </tr>
+            <tr>
+                <td><code>[attribute$=value]</code></td>
+                <td><code>figcaption[id$="image"]</code></td>
+                <td>Selects all &lt;figcaption&gt; elements whose id attribute ends with 'image'.</td>
+            </tr>
+            <tr>
+                <td><code>[attribute*=value]</code></td>
+                <td><code>figcaption[class*="verbose"]</code></td>
+                <td>Selects all &lt;figcaption&gt; elements whose class attribute contains the substring 'verbose'.</td>
+            </tr>
+            <tr>
+                <td><code>element:active</code></td>
+                <td><code>p:active</code></td>
+                <td>Selects and styles the active paragraph (it becomes active when you click on it).  Used most commonly on &lt;a&gt; elements.</td>
+            </tr>
+            <tr>
+                <td><code>element::after</code></td>
+                <td><code>div::after</code></td>
+                <td>Inserts something after the content of each &lt;div&gt; element.</td>
+            </tr>
+            <tr>
+                <td><code>element::before</code></td>
+                <td><code>div::before</code></td>
+                <td>Inserts something before the content of each &lt;div&gt; element.</td>
+            </tr>
+            <tr>
+                <td><code>element:checked</code></td>
+                <td><code>input:checked</code></td>
+                <td>Selects every checked &lt;input&gt; element (applicable to radio buttons and checkboxes). Also used for &lt;option&gt; elements.</td>
+            </tr>
+            <tr>
+                <td><code>element:default</code></td>
+                <td><code>input:default</code></td>
+                <td>Selects all the default &lt;input&gt; elements.</td>
+            </tr>
+            <tr>
+                <td><code>element:disabled</code></td>
+                <td><code>input:disabled</code></td>
+                <td>Selects all the &lt;input&gt; elements that possess a 'disabled' attribute.</td>
+            </tr>
+            <tr>
+                <td><code>element:empty</code></td>
+                <td><code>div:empty</code></td>
+                <td>Selects all the &lt;div&gt; elements that have no children (including text nodes).</td>
+            </tr>
+            <tr>
+                <td><code>element:enabled</code></td>
+                <td><code>input:enabled</code></td>
+                <td>Selects all the enabled &lt;input&gt; elements (i.e. those &lt;input&gt; elements which do not have a 'disabled' attribute).</td>
+            </tr>
+            <tr>
+                <td><code>element:first-child</code></td>
+                <td><code>h1:first-child</code></td>
+                <td>Selects each &lt;h1&gt; element that is the first child of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element::first-letter</code></td>
+                <td><code>h1::first-letter</code></td>
+                <td>Selects the first letter of every &lt;h1&gt; element.</td>
+            </tr>
+            <tr>
+                <td><code>element::first-line</code></td>
+                <td><code>h1::first-line</code></td>
+                <td>Selects the first line of every &lt;h1&gt; element.</td>
+            </tr>
+            <tr>
+                <td><code>element:first-of-type</code></td>
+                <td><code>div:first-of-type</code></td>
+                <td>Selects each &lt;div&gt; element that is the first &lt;div&gt; element of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element:focus</code></td>
+                <td><code>input:focus</code></td>
+                <td>Selects the &lt;input&gt; element which has focus.</td>
+            </tr>
+            <tr>
+                <td><code>:fullscreen</code></td>
+                <td><code>:fullscreen</code></td>
+                <td>Apply CSS styling when the page is in full-screen mode.</td>
+            </tr>
+            <tr>
+                <td><code>element:hover</code></td>
+                <td><code>p:hover</code></td>
+                <td>Selects paragraphs on mouse over.</td>
+            </tr>
+            <tr>
+                <td><code>element:in-range</code></td>
+                <td><code>input[type=number]:in-range</code></td>
+                <td>Selects all the &lt;input&gt; elements that have a type attribute equal to 'number' and are in-range.</td>
+            </tr>
+            <tr>
+                <td><code>element:indeterminate</code></td>
+                <td><code>input[type=checkbox]:indeterminate</code></td>
+                <td>Selects all the &lt;input&gt; elements that have a type attribute equal to 'checkbox' and are in an indeterminate state.</td>
+            </tr>
+            <tr>
+                <td><code>element:invalid</code></td>
+                <td><code>input[type=email]:invalid</code></td>
+                <td>Selects all the &lt;input&gt; elements that have a type attribute equal to 'email' and contain an invalid value.</td>
+            </tr>
+            <tr>
+                <td><code>element:lang(language)</code></td>
+                <td><code>p:lang(fr)</code></td>
+                <td>Selects each &lt;p&gt; element that has a lang attribute equal to 'fr' (French).</td>
+            </tr>
+            <tr>
+                <td><code>element:last-child</code></td>
+                <td><code>div:last-child</code></td>
+                <td>Selects each &lt;div&gt; element that is the last child of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element:last-of-type</code></td>
+                <td><code>div:last-of-type</code></td>
+                <td>Selects each &lt;div&gt; element that is the last &lt;div&gt; element of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>:link</code></td>
+                <td><code>a:link</code></td>
+                <td>Selects all unvisited links.</td>
+            </tr>
+            <tr>
+                <td><code>::marker</code></td>
+                <td><code>::marker</code></td>
+                <td>Selects the markers of list items.</td>
+            </tr>
+            <tr>
+                <td><code>:not(selector)</code></td>
+                <td><code>:not(div)</code></td>
+                <td>Selects every element that is not a &lt;div&gt; element.</td>
+            </tr>
+            <tr>
+                <td><code>element:nth-child(n)</code></td>
+                <td><code>div:nth-child(2)</code></td>
+                <td>Selects each &lt;div&gt; element that is the second child of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element:nth-last-child(n)</code></td>
+                <td><code>div:nth-last-child(2)</code></td>
+                <td>Selects each &lt;div&gt; element that is the penultimate child of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element:nth-last-of-type(n)</code></td>
+                <td><code>div:nth-last-of-type(2)</code></td>
+                <td>Selects every &lt;div&gt; element that is the penultimate &lt;div&gt; element of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element:nth-of-type(n)</code></td>
+                <td><code>div:nth-of-type(2)</code></td>
+                <td>Selects each &lt;div&gt; element that is the second &lt;div&gt; element of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element:only-of-type</code></td>
+                <td><code>div:only-of-type</code></td>
+                <td>Selects each &lt;div&gt; element that is the only &lt;div&gt; element of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element:only-child</code></td>
+                <td><code>div:only-child</code></td>
+                <td>Selects each &lt;div&gt; element that is the only child of its parent.</td>
+            </tr>
+            <tr>
+                <td><code>element:optional</code></td>
+                <td><code>input[type=text]:optional</code></td>
+                <td>Selects every &lt;input&gt; element that does not have a 'required' attribute and whose type attribute is equal to 'text'.</td>
+            </tr>
+            <tr>
+                <td><code>element:out-of-range</code></td>
+                <td><code>input[type=number]:out-of-range</code></td>
+                <td>Selects every &lt;input&gt; element whose type attribute is equal to 'number' and whose value is outside the specified range.</td>
+            </tr>
+            <tr>
+                <td><code>element::placeholder</code></td>
+                <td><code>input[type=text]::placeholder</code></td>
+                <td>Selects every &lt;input&gt; element whose type attribute is equal to 'text' and that possesses the 'placeholder' attribute.</td>
+            </tr>
+            <tr>
+                <td><code>element:read-only</code></td>
+                <td><code>input[type=text]:read-only</code></td>
+                <td>Selects every &lt;input&gt; element whose type attribute is equal to 'text' and that possesses the 'readonly' attribute.</td>
+            </tr>
+            <tr>
+                <td><code>element:read-write</code></td>
+                <td><code>input[type=text]:read-write</code></td>
+                <td>Selects every &lt;input&gt; element whose type attribute is equal to 'text' and that does not possess the 'readonly' or 'disabled' attributes.</td>
+            </tr>
+            <tr>
+                <td><code>element:required</code></td>
+                <td><code>input[type=text]:required</code></td>
+                <td>Selects every &lt;input&gt; element whose type attribute is equal to 'text' and that possesses the 'required' attribute.</td>
+            </tr>
+            <tr>
+                <td><code>element:root</code></td>
+                <td><code>html:root</code></td>
+                <td>Selects the document's root element. In HTML, this is always the &lt;html&gt; element.</td>
+            </tr>
+            <tr>
+                <td><code>element::selection</code></td>
+                <td><code>p::selection</code></td>
+                <td>Selects the portion of &lt;p&gt; elements that is selected (highlighted) by a user.</td>
+            </tr>
+            <tr>
+                <td><code>element:target</code></td>
+                <td><code>p:target</code></td>
+                <td>Selects the &lt;p&gt; element that is the target of an internal page link when that link is clicked.</td>
+            </tr>
+            <tr>
+                <td><code>element:valid</code></td>
+                <td><code>input[type=email]:valid</code></td>
+                <td>Selects every &lt;input&gt; element whose type attribute is equal to 'email' and whose value validates according to the element's settings.</td>
+            </tr>
+            <tr>
+                <td><code>element:visited</code></td>
+                <td><code>a:visited</code></td>
+                <td>Selects all visited links.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
