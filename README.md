@@ -28,3 +28,5 @@ Simply clone this project to the directory of your choice, navigate to the downl
 ![the index file used to load the CSS selectors cheat sheet reference][index_file]
 
 [index_file]: image/index_file.PNG
+
+Alternatively, visit https://chris-larham-1983.github.io/codecademy-reference-project.

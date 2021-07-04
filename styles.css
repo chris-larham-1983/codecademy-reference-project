@@ -7,7 +7,7 @@ p {
     font-size: 1.25em;
 }
 
-code {
+code, span {
     color: black;
     font-family: monospace;
     font-weight: bold;
